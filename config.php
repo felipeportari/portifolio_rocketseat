@@ -28,24 +28,42 @@ $cards =  [
         'title' => 'Landing Starbucks',
         'text'  => 'Landing page criada utilizando o Starbucks como inspiração, focada em design moderno e experiência visual atraente.',
         'link'   => 'https://github.com/felipeportari/starbucks_landing',
-        'image' => 'src/starbucks-1262392_640.webp'
+        'image' => 'src/starbucks-1262392_640.webp',
+        'techs' => [
+            $technologies[2],
+            $technologies[3],
+            $technologies[4]
+        ]
     ],
     [
         'title' => 'Projeto Globo Terrestre',
         'text'  => 'Projeto em Three.js apresentando um globo terrestre interativo, desenvolvido para aprender e explorar conceitos de 3D na web.',
         'link'   => 'https://github.com/felipeportari/three.js-project',
-        'image' => 'src/globe.webp'
+        'image' => 'src/globe.webp',
+        'techs' => [
+
+            $technologies[4]
+        ]
     ],
     [
         'title' => 'Estoque Online',
         'text'  => 'Sistema de estoque online criado para facilitar checagens e marcações sem o uso de papel, tornando o processo mais ágil e organizado.',
         'link'   => 'https://github.com/felipeportari/stock_checker',
-        'image' => 'src/gestaoclick-estoque-shoope-mercado-livre.webp'
+        'image' => 'src/gestaoclick-estoque-shoope-mercado-livre.webp',
+        'techs' => [
+            $technologies[0],
+            $technologies[1]
+        ]
     ],
     [
         'title' => 'Passion Clock',
         'text'  => 'Relógio online criado de brincadeira utilizando HTML, CSS e JavaScript, inspirado no meme “graphic design is my passion”.',
         'link'   => 'https://github.com/felipeportari/passion-clock',
-        'image' => 'src/original-56b19720d83b146e748d69554e264aff.webp'
+        'image' => 'src/original-56b19720d83b146e748d69554e264aff.webp',
+        'techs' => [
+            $technologies[2],
+            $technologies[3],
+            $technologies[4]
+        ]
     ]
 ];

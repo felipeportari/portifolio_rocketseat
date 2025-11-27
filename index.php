@@ -172,6 +172,7 @@
       flex-direction: column;
       justify-content: space-between;
       padding: 20px;
+      gap: 20px;
     }
 
     .card-button {
@@ -237,11 +238,16 @@
 
       .cards .info {
         width: 100%;
+        align-items: center;
         padding: 20px;
       }
 
       .cards .info p {
         margin-bottom: 10px;
+      }
+
+      .cards .info .technologies-card {
+        justify-content: center;
       }
     }
 
@@ -254,6 +260,24 @@
         width: 100%;
         max-height: 500px;
       }
+    }
+
+    .cards .info .technologies-card {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+    }
+
+    .cards .info .card-tech {
+      display: inline-flex;
+      align-items: center;
+      width: fit-content;
+      max-width: none;
+      justify-content: center;
+      white-space: nowrap;
+      padding: 5px 10px;
+      border-radius: 50px;
+      font-size: 14px;
     }
   </style>
 </head>
@@ -305,6 +329,16 @@
           </div>
           <div class="info">
             <p> <?= $card['text'] ?></p>
+            <div class="technologies-card">
+              <?php foreach ($card['techs'] as $technology): ?>
+                <div class="card-tech"
+                  style="background-color: <?= $technology['color'] ?>50;
+                    border: 1.5px solid <?= $technology['color'] ?>70;">
+                  <?= $technology['name'] ?>
+                </div>
+              <?php endforeach; ?>
+            </div>
+
             <a href="<?= $card['link'] ?>">
               <button class="card-button">Ver Mais</button>
             </a>
