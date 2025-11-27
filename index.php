@@ -141,15 +141,18 @@
       flex-wrap: wrap;
       justify-content: space-between;
       row-gap: 30px;
+      align-items: stretch
     }
 
     .cards {
       display: flex;
       flex-direction: row;
+      justify-content: space-between;
       max-width: 49%;
       overflow: hidden;
       border-radius: 25px;
       position: relative;
+      max-height: 700px;
     }
 
     .cards div {
@@ -210,13 +213,6 @@
       display: block;
     }
 
-    .cards .info {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      padding: 20px;
-      width: 52%;
-    }
 
     @media (max-width: 1024px) {
       .cards {
@@ -317,7 +313,6 @@
       <?php endforeach; ?>
     </div>
   </section>
-
 </body>
 
 </html>
